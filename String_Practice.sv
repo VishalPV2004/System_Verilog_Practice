@@ -29,4 +29,16 @@ module tb_string();
     $display("%s",q);
   end
 endmodule
+
+///////////////////////////////////////////////////////////////
+
+module tb();
+  string s = "Vishal P V";
+  int i = 0;
+  initial begin
+    i = s.len();
+    $display("Length of the string : %d",i);
+  end
+    
+endmodule
     
