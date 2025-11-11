@@ -55,3 +55,15 @@ module tb;
     end
   end
 endmodule
+
+///////////////////////////////////////////////////////////////
+
+module tb();
+  int val;
+  string s = "9";
+  
+  initial begin
+    val = s.atoi();
+    $display("%d",val);
+  end
+endmodule
